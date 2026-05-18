@@ -1,0 +1,24 @@
+{
+  "originHash" : "d1546ba6e9a9420a5495469475a33e9cee1ee90e7de2c3ac16ce2ce631b92a5b",
+  "pins" : [
+    {
+      "identity" : "kingfisher",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/onevcat/Kingfisher.git",
+      "state" : {
+        "revision" : "c152c1915f60c51e4afa0752656993ee5b3c63db",
+        "version" : "8.8.1"
+      }
+    },
+    {
+      "identity" : "signalr-client-swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/moozzyk/SignalR-Client-Swift",
+      "state" : {
+        "revision" : "a5aca80a4de24cc59bb51a1a9c7242960422b9b3",
+        "version" : "1.2.1"
+      }
+    }
+  ],
+  "version" : 3
+}
