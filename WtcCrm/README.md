@@ -1,23 +1,23 @@
-## ⚙️ Como Executar Localmente
+## ⚙️ How to Run Locally
 
-### 1. Preparando e Rodando o Backend (C#)
+### 1. Preparing and Running the Backend (C#)
 
-### Pré-requisitos
+### Prerequisites
 
-Antes de iniciar, certifique-se de ter instalado:
+Before starting, make sure you have installed:
 
 - **.NET 8 SDK**
 - **MongoDB**
 - **MinIO**
-- **Docker** (opcional)
+- **Docker** (optional)
 
-Todos os serviços devem estar rodando localmente.
+All services must be running locally.
 
-### Configurando as Variáveis de Ambiente
+### Configuring the Environment Variables
 
-Abra o arquivo `appsettings.json` dentro do projeto da API.
+Open the `appsettings.json` file inside the API project.
 
-Para facilitar os testes locais, o arquivo já está apontando para `localhost`. Preencha os dados do seu ambiente conforme necessário:
+To make local testing easier, the file already points to `localhost`. Fill in your environment's data as needed:
 
 ```json
 {
@@ -40,24 +40,24 @@ Para facilitar os testes locais, o arquivo já está apontando para `localhost`.
 }
 ```
 
-### Restaurar Dependências e Executar
+### Restore Dependencies and Run
 
-Abra o terminal na raiz do projeto backend e execute:
+Open the terminal at the root of the backend project and run:
 
 ```bash
 dotnet restore
 dotnet run --project WtcCrm.API/WtcCrm.API.csproj
 ```
 
-### Swagger da API
+### API Swagger
 
-A API iniciará por padrão em:
+By default, the API will start at:
 
 ```txt
 http://localhost:5157
 ```
 
-Para visualizar e testar os endpoints, acesse:
+To view and test the endpoints, go to:
 
 ```txt
 http://localhost:5157/swagger
@@ -65,33 +65,33 @@ http://localhost:5157/swagger
 
 ---
 
-## 📱 Configuração do Aplicativo (iOS)
+## 📱 App Configuration (iOS)
 
-O aplicativo consome o backend através de **REST APIs** e **SignalR (WebSocket)** para comunicação em tempo real.
+The app consumes the backend through **REST APIs** and **SignalR (WebSocket)** for real-time communication.
 
-A configuração é feita no arquivo:
+The configuration is done in the file:
 
 ```swift
 APIConfig.swift
 ```
 
-### Cenário A: Testando no Simulador do Xcode
+### Scenario A: Testing on the Xcode Simulator
 
-Ao testar no simulador do Xcode (mesmo Mac que executa a API), utilize:
+When testing on the Xcode simulator (same Mac running the API), use:
 
 ```swift
 private static let host = "localhost"
 ```
 
-### Cenário B: Testando em iPhone Físico
+### Scenario B: Testing on a Physical iPhone
 
-Ao utilizar um iPhone físico, substitua `localhost` pelo IPv4 local da máquina:
+When using a physical iPhone, replace `localhost` with the machine's local IPv4:
 
 ```swift
-private static let host = "seu IPv4"
+private static let host = "your IPv4"
 ```
 
-Exemplo completo:
+Full example:
 
 ```swift
 import Foundation
@@ -112,16 +112,16 @@ enum APIConfig {
 }
 ```
 
-Para executar o projeto:
+To run the project:
 
-1. Abra o projeto no **Xcode 15+**
-2. Selecione o dispositivo/simulador
-3. Execute:
+1. Open the project in **Xcode 15+**
+2. Select the device/simulator
+3. Run:
 
 ```txt
 Cmd + R
 ```
 
-O aplicativo será compilado e executado.
+The app will be built and run.
 
 ---

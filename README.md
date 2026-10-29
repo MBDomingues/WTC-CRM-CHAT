@@ -1,35 +1,35 @@
-# 🚀 WtcChat - Gestão Inteligente com chat integrado
+# 🚀 WtcChat - Smart Management with integrated chat
 
-Este aplicativo foi desenvolvido para um trabalho de conclusão/desafio (**Challenge**) da minha graduação, em parceria com o **World Trade Center (WTC)**.
+This app was developed for a capstone project/challenge (**Challenge**) in my undergraduate program, in partnership with the **World Trade Center (WTC)**.
 
-O desafio proposto foi criar uma plataforma funcional de **CRM integrada a um aplicativo móvel**, focada em modernizar a comunicação e o relacionamento da empresa com seus clientes.
+The proposed challenge was to create a functional **CRM platform integrated with a mobile app**, focused on modernizing the company's communication and relationship with its clients.
 
-A proposta resolve a necessidade de oferecer uma experiência de atendimento semelhante aos aplicativos de mensagens modernos, mas **100% integrada ao contexto corporativo do WTC**, suportando disparos de campanhas, segmentações e métricas.
-
----
-
-## 📋 Requisitos e Funcionalidades do Projeto
-
-Com base nas especificações do desafio, a solução engloba um **Aplicativo Nativo (iOS)** e um **Backend Robusto**, cobrindo as seguintes funcionalidades:
-
-- **🔐 Autenticação Segura:** Login adaptado para Operadores (CRM) e Clientes.
-- **💬 Chat Integrado (Tempo Real):** Conversas 1:1 e por grupos/segmentos, utilizando WebSockets para comunicação instantânea e status de leitura.
-- **📊 Visão 360° no CRM (App):** Lista de clientes com busca, filtros inteligentes, gestão de **Score**, **Status**, tags e registro de anotações/tarefas.
-- **📢 Campanhas Express:** Módulo para envio imediato de mensagens ricas (com imagens e deeplinks) para segmentos específicos de clientes.
-- **📂 Upload de Mídias:** Integração com Storage (**S3 Compatible**) para envio de fotos de perfil, capas de grupo e mídias no chat.
-- **🛡️ Governança:** Registros de logs e auditoria de ações críticas da API.
+The proposal addresses the need to offer a support experience similar to modern messaging apps, but **100% integrated into WTC's corporate context**, supporting campaign broadcasts, segmentation and metrics.
 
 ---
 
-## 🛠️ Tecnologias Utilizadas
+## 📋 Project Requirements and Features
 
-A solução foi desenhada utilizando **Clean Architecture**, separando as camadas de **Domínio**, **Aplicação** e **Infraestrutura**, garantindo escalabilidade, manutenção e organização do código.
+Based on the challenge specifications, the solution includes a **Native App (iOS)** and a **Robust Backend**, covering the following features:
+
+- **🔐 Secure Authentication:** Login adapted for Operators (CRM) and Clients.
+- **💬 Integrated Chat (Real Time):** 1:1 and group/segment conversations, using WebSockets for instant communication and read status.
+- **📊 360° View in the CRM (App):** Client list with search, smart filters, management of **Score**, **Status**, tags and recording of notes/tasks.
+- **📢 Express Campaigns:** Module for immediately sending rich messages (with images and deeplinks) to specific client segments.
+- **📂 Media Upload:** Integration with Storage (**S3 Compatible**) for sending profile photos, group covers and chat media.
+- **🛡️ Governance:** Logging and auditing of critical API actions.
+
+---
+
+## 🛠️ Technologies Used
+
+The solution was designed using **Clean Architecture**, separating the **Domain**, **Application** and **Infrastructure** layers, ensuring scalability, maintainability and code organization.
 
 <div align="center">
   <table>
     <tr>
       <td align="center" width="50%">
-        <h3><strong>👨‍💻 Linguagens & Front-end</strong></h3>
+        <h3><strong>👨‍💻 Languages & Front-end</strong></h3>
         <img src="https://img.shields.io/badge/swift-F54A2A?style=for-the-badge&logo=swift&logoColor=white"/>
         <img src="https://img.shields.io/badge/SwiftUI-000000?style=for-the-badge&logo=swift&logoColor=blue"/>
       </td>
@@ -49,7 +49,7 @@ A solução foi desenhada utilizando **Clean Architecture**, separando as camada
         <img src="https://img.shields.io/badge/MinIO-C7202C?style=for-the-badge&logo=minio&logoColor=white"/>
       </td>
       <td align="center" width="50%">
-        <h3><strong>🚀 Infraestrutura & Segurança</strong></h3>
+        <h3><strong>🚀 Infrastructure & Security</strong></h3>
         <img src="https://img.shields.io/badge/Docker-0DB7ED?style=for-the-badge&logo=docker&logoColor=white"/>
         <img src="https://img.shields.io/badge/JWT-black?style=for-the-badge&logo=jsonwebtokens"/>
       </td>
@@ -60,9 +60,9 @@ A solução foi desenhada utilizando **Clean Architecture**, separando as camada
 
 ---
 
-## 🏛️ Arquitetura do Projeto
+## 🏛️ Project Architecture
 
-O projeto segue os princípios de **Clean Architecture**, organizando responsabilidades em camadas independentes:
+The project follows **Clean Architecture** principles, organizing responsibilities into independent layers:
 
 ```txt
 WtcCrm
@@ -88,38 +88,38 @@ WtcCrm
     └── Swagger
 ```
 
-Essa estrutura garante:
+This structure ensures:
 
-- ✅ **Baixo acoplamento**
-- ✅ **Alta escalabilidade**
-- ✅ **Facilidade de manutenção**
-- ✅ **Separação clara de responsabilidades**
+- ✅ **Low coupling**
+- ✅ **High scalability**
+- ✅ **Ease of maintenance**
+- ✅ **Clear separation of responsibilities**
 
 ---
 
-## 🎯 Objetivo do Projeto
+## 🎯 Project Goal
 
-O **WtcCrm** foi desenvolvido com o objetivo de modernizar a comunicação entre empresa e clientes, trazendo uma experiência semelhante aos aplicativos modernos de mensagens, mas totalmente integrada ao ecossistema corporativo do **WTC**, permitindo:
+**WtcCrm** was developed with the goal of modernizing communication between the company and its clients, bringing an experience similar to modern messaging apps, but fully integrated into **WTC**'s corporate ecosystem, enabling:
 
-- Atendimento em tempo real
-- Gestão inteligente de relacionamento
-- Campanhas segmentadas
-- Métricas de engajamento
-- Auditoria e governança corporativa
+- Real-time support
+- Smart relationship management
+- Segmented campaigns
+- Engagement metrics
+- Corporate auditing and governance
 
-## ✅ Requisitos do Challenge Atendidos
+## ✅ Challenge Requirements Met
 
-| Requisito | Status |
+| Requirement | Status |
 |-----------|--------|
-| Aplicativo nativo iOS | ✅ |
-| Backend .NET 8 | ✅ |
+| Native iOS app | ✅ |
+| .NET 8 backend | ✅ |
 | JWT Authentication | ✅ |
-| Integração Mobile + API Real | ✅ |
-| Banco NoSQL (MongoDB) | ✅ |
-| Chat em Tempo Real | ✅ |
+| Mobile + Real API integration | ✅ |
+| NoSQL database (MongoDB) | ✅ |
+| Real-Time Chat | ✅ |
 | SignalR / WebSocket | ✅ |
-| Upload de Mídia (MinIO) | ✅ |
-| Governança & Auditoria | ✅ |
-| APIs REST Funcionais | ✅ |
+| Media Upload (MinIO) | ✅ |
+| Governance & Auditing | ✅ |
+| Functional REST APIs | ✅ |
 | Swagger | ✅ |
 | Clean Architecture | ✅ |
